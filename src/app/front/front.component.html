@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let media of mediaArray">
+    <img [src]="mediaService.baseUrl + 'uploads/'+ (media.thumbnail | thumbnail: 'small')" [alt]="media.title">
+    <h4>{{media.title}}</h4>
+    <p>{{media.description}}</p>
+  </li>
+</ul>
